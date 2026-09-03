@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "dev": "npx @modelcontextprotocol/inspector deno --allow-read mcp-stellar-xdr.ts",
+    "test": "deno test --allow-read --allow-env --allow-run=deno"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["no-explicit-any"]
+    }
+  }
+}
